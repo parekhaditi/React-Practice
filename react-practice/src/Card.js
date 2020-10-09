@@ -1,0 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+export default function Card(props){
+    return(
+        <div className="cards">
+      <div className="card">
+        <img src={props.imgsrc} alt = "myPic" className="card_img" />
+        <div className="card__info">
+        <span className="card__category">{props.title}</span>
+        <h3 className="card__title">{props.name}</h3>
+        <a href={props.link} target="_blank">
+            <button>Learn Now</button>
+          </a>
+        </div> 
+      </div>
+    </div>
+    )
+}
